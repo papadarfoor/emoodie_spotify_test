@@ -25,7 +25,6 @@ class CustomDioInterceptor extends Interceptor {
       // Get the token from storage
       final header = await _tokenStorageService.toHeader();
 
-      // Add the token to the request options if it is not null
 
       options.headers.addAll(header);
     }
